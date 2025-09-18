@@ -1,33 +1,40 @@
 :root {
-    --main-color: #696FFF;
-    --menu-button-color: #696FFF;
-    --sub-color: #A8ACFF;
-    --light-sub-color: #7E83FF;
-    --border-color: #e1e8ed; /* 여기서 부터는 수정 안 해도 됩니다. */
-    --sub-border-color: #ccc;
-    --body-color: #f3f3f3;
-    --text-color: #373a3c;
-    --text-color-1: #000;
-    --text-color-2: #666;
-    --a-color: dodgerblue;
-    --nav-color: #fcfcfc;
-    --bg-color-0: white;
-    --bg-color-1: #fbfbfb;
-    --bg-color-2: #f7f7f7;
-    --bg-color-3:#f0f0f0;
+    --main-color: #000;
+    --sub-color: #383b40;
+    --menu-button-color: #777;
+    --border-color: #555;
+    --sub-border-color: #444;
+    --body-color: #000;
+    --text-color: #E0E0E0;
+    --text-color-1: #ddd;
+    --text-color-2: #bbb;
+    --a-color: #A7C8FF;
+    --nav-color: #ffffff;
+    --bg-color-0: #1c1d1f;
+    --bg-color-1: #111;
+    --bg-color-2: #272727;
+    --bg-color-3: #393939;
     --button-bg-color: #fff;
-    --topic-color: #bbeabb;
-    --link-color: #090;
+    --link-color: #0b0;
+    --topic-color: #325a56;
 }
 
-::-moz-selection {
-    background: var(--light-sub-color);
-    color: #fff;
- }
- ::selection {
-    background: var(--light-sub-color);
-    color: #fff;
- }
+.opennamu_main textarea, .opennamu_main input, .opennamu_main select {
+    background: var(--bg-color-0);
+}
+
+.opennamu_main button {
+    background: var(--menu-button-color);
+}
+
+html, body {
+    color: var(--text-color);
+}
+
+::selection {
+    background-color: var(--bg-color-3) !important; /* 다중 선택 배경색 (기존 배경색에서 차이나게 설정) */
+    color: var(--text-color) !important;            /* 텍스트 색상 */
+}
 
 /* 태그 수정 */
 * {
@@ -826,4 +833,6 @@ caption {
     color: var(--text-color);
     caption-side: top;
 }
+
+
 /* 부트스트랩 커스텀 End*/

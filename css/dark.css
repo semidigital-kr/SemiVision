@@ -1,5 +1,5 @@
 :root {
-    --main-color: #2d2f34;
+      --main-color: #000;
     --sub-color: #383b40;
     --menu-button-color: #777;
     --border-color: #555;
@@ -9,7 +9,7 @@
     --text-color-1: #ddd;
     --text-color-2: #bbb;
     --a-color: #A7C8FF;
-    --nav-color: #ddd;
+    --nav-color: #fff;
     --bg-color-0: #1c1d1f;
     --bg-color-1: #111;
     --bg-color-2: #272727;
@@ -29,4 +29,9 @@
 
 html, body {
     color: var(--text-color);
+}
+
+::selection {
+    background-color: var(--bg-color-3) !important; /* 다중 선택 배경색 (기존 배경색에서 차이나게 설정) */
+    color: var(--text-color) !important;            /* 텍스트 색상 */
 }

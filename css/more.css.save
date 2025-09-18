@@ -1,4 +1,3 @@
-
 /* 문단 */
 h1, h2, h3, h4, h5, h6 {
     margin: 1.2em 0 0.6em;
@@ -38,16 +37,15 @@ h1, h2, h3, h4, h5, h6 {
 	word-break: keep-all;
 }
 
-/* 상단 공지
-.vision-top-notice-bg {
-    background-color: #fff;
+/* 상단 공지 */
+.fvision-top-notice-bg {
+    background-color: #f0ef75;
 }
- 
 
 .vision-top-notice {
 	padding: 4px 14px;
     color: #222;
-}*/
+}
 
 /* 디자인 강제 지정 */
 .opennamu_not_exist_link {
@@ -252,13 +250,4 @@ td.opennamu_comment_blind {
 		color: var(--text-color-1);
 		border-radius: 20px;
 	}
-}
-
-.vision .vision-top-notice {
-    z-index: 1 !important;
-}
-
-/* content-wrapper의 z-index를 높여서 앞에 보이게 */
-.vision .content-wrapper {
-    z-index: 10 !important;
 }
